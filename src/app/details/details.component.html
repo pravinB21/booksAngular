@@ -1,0 +1,29 @@
+<h1>{{repos[0].owner.login}}</h1>
+<div class="div1">
+    
+    <div>
+        <ul  style="list-style: none;">
+            <li><img src="{{repos[0].owner.avatar_url}}" class="img"></li>
+            <li class="li1">ID:- {{repos[0].owner.id}}</li><br>
+            <li class="li1">Full Name:- {{repos[0].full_name}}</li>
+        </ul>
+    </div>
+    
+</div>
+
+<pagination-controls (pageChange)="page = $event" class="pagin"></pagination-controls>
+
+<ul  *ngFor="let i of repos | paginate: { itemsPerPage: 10, currentPage: page ,totalItems:totalLength }" class="ul1" style="list-style: none;">
+                <table  class="div2" width="1360px">
+                    <tr>
+                        <td style="color: tomato;">Name:- {{i.name}}</td>
+                        <!-- <td rowspan="2"><img src="{{i.owner.avatar_url}}" class="imga"></td> -->
+                    </tr>
+                    <tr>
+                        <td style="color: yellowgreen;">Description:- {{i.description}}</td>
+
+                    </tr>
+                </table>
+
+
+            </ul>

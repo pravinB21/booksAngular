@@ -1,0 +1,35 @@
+.img{
+    width: 230px;
+    border-radius: 50%;
+}
+ul{
+    display: inline-flex;
+}
+.li1{
+    text-align: right;
+    font-size: 40px;
+    color: yellow;
+    margin-left: 130px;
+}
+h1{
+    text-align: center;
+    text-transform: capitalize;
+    
+}
+.div1{
+    display: inline-block;
+}
+.div2{
+    border: 2px solid gray;
+    box-shadow: 3px 3px 3px 3px;
+    margin: 18px;
+    padding: 14px;
+    border-radius:25px;
+    transition: transform .2s;
+    
+}
+.div2:hover{
+    /* background-color: red; */
+    transform: scale(1.05);
+    transform: rotate(deg);
+}

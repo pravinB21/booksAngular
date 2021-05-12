@@ -1,0 +1,30 @@
+.img{
+    width: 230px;
+    border-radius: 50%;
+}
+.div1{
+    background-color: lightskyblue;
+}
+h1{
+    text-align: center;
+    text-decoration: underline;
+}
+
+.div2 {
+    float:left; 
+    background:tomato;
+    width:100px;
+    height:280px;
+}
+.div3{
+    float:right; 
+    background-color:#F1E861 ;
+    width: 75%;
+    height:280px;
+    list-style: none;
+}
+li{
+    list-style: none;
+    line-height: 2;
+    padding: 10px;
+}
